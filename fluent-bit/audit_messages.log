@@ -1,0 +1,1 @@
+tail -1f /var/log/coraza-spoa/audit.log  | jq --unbuffered -c '.transaction.id as $id | .messages[] | { "transaction_id": $id } + .' >> /var/log/coraza-spoa/audit_messages.log
