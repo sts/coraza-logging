@@ -59,3 +59,6 @@ tail -1f /var/log/coraza-spoa/audit.log  | jq --unbuffered -c '.transaction.id a
 ### Import the Grafana Dashboard
 
 In your Grafana Cloud instance open: *Dashboards > Browse > Import* and paste the JSON contained in [grafana/dashboard.json](grafana/dashboard.json).
+
+
+![Grafana Dashboard](/grafana/dashboard.png?raw=true "Screenshot")
